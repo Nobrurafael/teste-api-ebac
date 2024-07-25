@@ -85,7 +85,7 @@ describe('Testes da Funcionalidade Usuários', () => {
    
   });//RESOLVIDO
 
-  it.only('Deve deletar um usuário previamente cadastrado - DELETE', () => {
+  it('Deve deletar um usuário previamente cadastrado - DELETE', () => {
     cy.cadastrarUsuario(token, 'usuario a ser deletado', 'Delete')
     .then(response => {
       let id = response.body._id
